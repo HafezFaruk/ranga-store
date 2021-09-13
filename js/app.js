@@ -11,17 +11,17 @@ const showProducts = (products) => {
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("product");
-    div.innerHTML = `<div class="single-product"><div>
+    div.innerHTML = `
+    <div class="single-product"> 
       <img class="product-image" src=${image}></img>
-      </div>
-      <h3>${product.title}</h3>
+      <h6>${product.title}</h6>
       <p>Category: ${product.category}</p>
-      <h2>Price: ${product.price}</h2>
-      <h5>Reting: ${product.rating.count}</h5> 
-      <h6>${product.rating.rate}<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
-      <button id="details-btn" class="btn btn-danger">Details</button>
-      </div>
+      <h5>Price: ${product.price}</h5>
+      <h6>Reting: ${product.rating.count}</h6> 
+      <h6>${product.rating.rate}<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></h6>
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="btn btn-primary">Add to cart</button>
+      <button id="details-btn" class="btn btn-secondary">Details</button>
+    <div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
@@ -51,7 +51,7 @@ const updatePrice = (id, value) => {
 
 // set innerText function
 const setInnerText = (id, value) => {
-  document.getElementById(id).innerText = parseInt(value);
+  document.getElementById(id).innerText = parseFloat(value.toFixed(2));
 };
 
 // update delivery charge and total Tax
