@@ -5,14 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>World Shopping</title>
+  <title>Urban Dressing</title>
   <!-- Bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
   <!-- fontawesome icon -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -22,13 +18,14 @@
 
 <body>
   <header>
-    <h1 class="text-center mt-5 text-uppercase">Urban <span class="text-warning">Dressing</span></h1>
-    <div class="search-box">
-      <div class="input-group mb-3">
-        <input id="input-field" type="text" class="form-control" aria-label="Recipient's username"
-          aria-describedby="button-addon2">
-        <button id="search-btn" onclick="loadProducts()" class="btn btn-primary" type="button" id="button-addon2">Search</button>
-      </div>
+    <h1 id="website-name" class="text-center mt-5 text-uppercase text-white">Urban <span
+        class="text-warning">Dressing</span></h1>
+
+    <div class="input-group mb-3 mx-auto input-button">
+      <input id="input-field" type="text" class="form-control" placeholder="Search your products"
+        aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button id="search-btn" onclick="loadProducts()" class="btn btn-primary" type="button"
+        id="button-addon2">Search</button>
     </div>
   </header>
   <main>
