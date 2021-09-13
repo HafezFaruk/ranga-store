@@ -1,3 +1,4 @@
+/* google fonts cdn */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 body {
@@ -5,12 +6,15 @@ body {
   font-family: 'Roboto', sans-serif;  
   background-color: lightslategray;
 }
+/*Title website-name */
 #website-name{
   font-family: 'Kaushan Script', cursive;
 }
+/* Search input-button */
 .input-button{
   width: 30rem;
 }
+/*All Products Card*/
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -20,25 +24,24 @@ body {
   align-items: center;
   justify-content: center;
 }
+/* single-product card */
 .single-product {
   padding: 10px;
- 
   background-color: white;
   width: 95%;
-  height: 370px;
+  height: 380px;
   margin: 10px;
   border-radius: 5px; 
 }
 .single-product:hover {
   box-shadow: 3px 3px 20px cyan;
-  
-  /* border: 1px solid cyan; */
-  /* transition: 0.10s; */
 }
+/* Card image size */
 .product-image {
   width: 150px;
   height: 150px;
 }
+/* Price cart bord */
 .cart {
   background-color: white;
   width: 350px;
@@ -46,16 +49,13 @@ body {
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
-  /* margin-right: 10px; */
   position: fixed;
 }
-/* .cart-main {
-  padding-right: 30px;
-} */
-.fas,
-.far{
+/* reting-star icons */
+.reting-star{
   color: gold;
 }
+/* Responsive Web Design Media Queries */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
@@ -68,9 +68,6 @@ body {
     border-radius: 5px;
     margin-right: 30px;
     position: fixed;
-  }
-  .cart-main {
-    padding-right: 10px;
   }
 }
 @media only screen and (max-width: 468px) {
