@@ -9,6 +9,7 @@ body {
 /*Title website-name */
 #website-name{
   font-family: 'Kaushan Script', cursive;
+  font-size: 4rem;
 }
 /* Search input-button */
 .input-button{
@@ -44,6 +45,9 @@ body {
   height: 150px;
 }
 /* Price cart bord */
+#cart-title{
+  font-family: 'Kaushan Script', cursive;
+}
 .cart {
   background-color: white;
   width: 350px;
